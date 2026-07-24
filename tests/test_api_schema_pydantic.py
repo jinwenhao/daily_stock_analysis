@@ -14,6 +14,7 @@ from api.v1.schemas.stocks import StockQuote
 
 DECISION_SIGNAL_PATHS = (
     "/api/v1/decision-signals",
+    "/api/v1/decision-signals/reassess",
     "/api/v1/decision-signals/outcomes/run",
     "/api/v1/decision-signals/outcomes",
     "/api/v1/decision-signals/outcomes/stats",
@@ -36,7 +37,15 @@ DECISION_SIGNAL_SCHEMAS = (
     "DecisionSignalOutcomeRunResponse",
     "DecisionSignalOutcomeStatsBucket",
     "DecisionSignalOutcomeStatsResponse",
+    "DecisionSignalProfileCalibration",
+    "DecisionSignalProfileCalibrationBreakdowns",
+    "DecisionSignalProfileCalibrationBucket",
+    "DecisionSignalPreview",
+    "DecisionSignalReassessErrorResponse",
+    "DecisionSignalReassessRequest",
+    "DecisionSignalReassessResponse",
     "DecisionSignalStatusUpdateRequest",
+    "DecisionSignalWarning",
 )
 P6_SIGNAL_LINKED_PATHS = (
     "/api/v1/alerts/triggers",
